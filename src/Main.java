@@ -199,7 +199,6 @@ public class Main extends JPanel implements KeyListener {
             } catch (IOException ex) {
                 System.out.println("An I/O error occurred");
                 ex.printStackTrace();
-                System.out.println("HEllO");
             }
         }
     }
