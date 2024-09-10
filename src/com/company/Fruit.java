@@ -1,7 +1,8 @@
+package com.company;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Fruit {
 
@@ -11,7 +12,8 @@ public class Fruit {
 
 
     public Fruit() {
-        img = new ImageIcon(Objects.requireNonNull(getClass().getResource("orange_20.png")));
+        img = new ImageIcon(getClass().getResource("orange.png"));
+//        img = new ImageIcon("orange.png");
         this.x = (int) (Math.floor(Math.random() * Main.col) * Main.CELL_SIZE);
         this.y = (int) (Math.floor(Math.random() * Main.row) * Main.CELL_SIZE);
     }
@@ -28,7 +30,7 @@ public class Fruit {
     public void drawFruit(Graphics g) {
         img.paintIcon(null, g, this.x, this.y);
 //        g.setColor(Color.YELLOW);
-//        g.fillOval(x, y, Main.CELL_SIZE, Main.CELL_SIZE);
+//        g.fillOval(x, y, com.company.Main.CELL_SIZE, com.company.Main.CELL_SIZE);
     }
 
     public void setNewLocations(Snake s) {

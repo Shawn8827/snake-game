@@ -1,3 +1,5 @@
+package com.company;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -132,7 +134,7 @@ public class Main extends JPanel implements KeyListener {
             // 吃五個果實加速一次
             if (fruitEatenCount % 5 == 0) {
                 increaseSpeed();
-                System.out.println("You have eaten " + fruitEatenCount + " godamn!!");
+                System.out.println("You have eaten " + fruitEatenCount + " goddamn!!");
                 System.out.println("Now speed is " + speed);
             }
         } else {
@@ -146,7 +148,7 @@ public class Main extends JPanel implements KeyListener {
 
 
     public static void main(String[] args) {
-        JFrame window = new JFrame("Snake Game");
+        JFrame window = new JFrame("com.comany.Snake Game");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setContentPane(new Main());
         window.pack();
