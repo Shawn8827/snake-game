@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Snake {
 
     private ArrayList<Node> snakeBody;
-    private Graphics g;
 
     public Snake() {
         snakeBody = new ArrayList<>();

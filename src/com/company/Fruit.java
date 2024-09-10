@@ -49,8 +49,8 @@ public class Fruit {
 
     private boolean check_overlap(int x, int y, Snake s) {
         ArrayList<Node> snake_body = s.getSnakeBody();
-        for (int i = 0; i < snake_body.size(); i++) {
-            if (x == snake_body.get(i).x && y == snake_body.get(i).y) {
+        for (Node node : snake_body) {
+            if (x == node.x && y == node.y) {
                 return true;
             }
         }
