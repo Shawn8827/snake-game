@@ -12,7 +12,7 @@ public class Fruit {
 
 
     public Fruit() {
-        img = new ImageIcon(getClass().getResource("orange.png"));
+        img = new ImageIcon(getClass().getResource("/orange.png"));
 //        img = new ImageIcon("orange.png");
         this.x = (int) (Math.floor(Math.random() * Main.col) * Main.CELL_SIZE);
         this.y = (int) (Math.floor(Math.random() * Main.row) * Main.CELL_SIZE);
